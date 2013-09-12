@@ -1,0 +1,43 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link rel="shortcut icon" href="img/favicon(m).ico"> </link>
+<!-- Copyright 2005 Macromedia, Inc. All rights reserved. -->
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+
+<title>Kirim bo`yicha monitoring</title>
+<script language="javascript" src="js/jquery-1.5.2.min.js"></script>
+
+<script type="text/javascript">
+window.onload = function () {
+        /**
+         * draw the graph
+         */
+        var thegraph = new JpGraph('vertical bar',
+                                   'bargraph',
+                                   null,
+                                   {
+                                   JpGraphDataFile       : 'monit_Kirim.php',
+                                   JpGraphPropertyFile   : 'js/barprops.txt',
+                                   });
+    }
+</script>
+
+</head> <body>
+<br />
+<table width="1000" align="center" id="main_border">
+  <? include("blocks/head.php"); ?>
+	<tr>
+    <? include("blocks/lefttd.php"); ?>
+    <td width="788" valign="top">
+	
+	<div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+	</td>
+  </tr>
+  <? include("blocks/subcontent.php"); ?>
+  <? include("blocks/footer.php"); ?>
+</table>
+</body>
+</html>
