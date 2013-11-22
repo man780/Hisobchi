@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Xabar yubormoq</h1>
+<h1>Xabar yubormoq test faylida yozildi</h1>
 <form action="tamplate.php" method="POST" id="send-msg-form" style="width:200px; border:1px solid #ccc; text-align:center"><br />
 	<input style="width:180px" type="text" name="username" value="Ism kiriting"/><br />
 	<input style="width:180px" type="text" name="mail" value="Mail kiriting"/><br />
